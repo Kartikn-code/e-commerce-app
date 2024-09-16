@@ -1,7 +1,7 @@
 
 div.loginbox{
-    width: 30%;
-    height: 30%;
+    width: 35%;
+    height: 35%;
     border-radius: 10px;
     text-align: center;
    background-color: rgb(199, 189, 58);
@@ -11,15 +11,15 @@ div.loginbox{
     font-style: bold;
     font-style: normal;
     padding: 10px;
-    margin: 10px;
     box-shadow: 0 0 700 solid white;
    justify-content: center;
+   margin-top: 80px;
+   margin-left: 80px;
 }
 html {
-    margin:20px;
-    padding: 10px;
+    margin-top: 0;
     border: 2px solid aquamarine;
-    background-color: black;
+    background-color: rgb(rgb(179, 41, 179), green, blue);
 }
 div.loginbox input{
     border-radius: 10px;
@@ -36,7 +36,8 @@ div.id1{
     
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    color: white;
+    
+    
 }
 nav.list1{
     display: flex;
@@ -73,30 +74,25 @@ button:hover{
     border-radius: 10px;
     justify-content: center;
     display: flex;
+    border: rgb(rgb(109, 31, 124), green, blue);
 
 }
 .container img{
     width: 10%;
-    height: 100%;
+    height: 30%;
     border-radius: 50%;
     transition: all ease-in-out 1s;
     object-fit: contain;
 
 }
-.container img:hover{
-    width: 15%;
-}
-.container img ::before{
-    width: 10%;
-    transition: all 2s ease ease-in-out;
-}
+
 
 div.menu{
     display: flex;
-    background-color: rgb(rgba(119, 179, 22, 0.664), green, blue);
+    background-color: rgb(rgb(165, 102, 173), green, blue);
     
 }
-.menu ul{
+.menubar ul{
     float: right;
     margin-left: 900px;
     display: flex;
@@ -106,4 +102,28 @@ div.menu{
 }
 .loginbox label{
     font-weight: 800;
+}
+
+head{
+    background-image: url("{% static 'images/bg1.jpg'%}");
+    color: rgb(rgb(55, 0, 255), green, blue);
+}
+
+body{
+    background-color: rgb(219, 214, 221);
+}
+div.menubar{
+    background-color:rgb(140, 17, 211);
+    display: flex;
+    font-weight: 900;
+    color: black;
+    padding-inline: 10px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.id1 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
 }

@@ -1,0 +1,47 @@
+{% load static %}
+<!doctype html>
+<head>
+  <script>
+    function accountcreation(){
+      prompt("Your account has been created Succesfully  !!")
+    }
+  </script>
+  <title>Signin</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/signin.css' %}">
+   
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <div class="menubar">
+    <div class="id1">
+        <img src="{% static 'images/BuyME.png' %}" alt="logo" width="100px" height="100px">
+        </div>
+    </div><br>
+
+<form action="{% url 'login' %}" method="post">
+  {% csrf_token %}
+  <div class="sigintab"> 
+  <label>Create Account</label><br><br>
+  <label for="Firstname">Firstname</label><br>
+  <input type="text" name="Firstname" maxlength="50" placeholder="Your-First"><br>
+
+  <label for="Lastname">Lastname</label><br>
+  <input type="text" name="Firstname" maxlength="50" placeholder="Your-Lastname"><br>
+
+  <label for="mailid">E-Mail id</label><br>
+  <input type="text"  maxlength="100" placeholder  ="Your-MailId"><br>
+
+  <label for="Phone">Phone Number</label><br>
+  <input type="number" maxlength="10" placeholder="Your-Mobile number"><br>  
+  
+  <label for="password">Pass-word</label><br>
+  <input type="password" maxlength="13" placeholder="Your-Password"><br>
+
+  <label for="password2">Pass-word Again</label><br>
+  <input type="password" maxlength="13" placeholder="renter Your Password"><br>
+<button onclick=""> Submit</button>
+</form>
+</div>
+
+</head>
+
+</html>
