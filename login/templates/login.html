@@ -5,6 +5,10 @@
     <script>
         function myclick(){
             Comment("hiii")
+            
+        }
+        function signin(){
+            document.getElementById('render').innerhtml='<object type="text/html" data="signin.html"></object>'
         }
     </script>
 </head>
@@ -33,8 +37,8 @@
         <input type="text" name="Username" placeholder="Username"><br>
         <label>Password</label><br>
         <input type="password" name="password" placeholder="Pass-word" maxlength="10"><br>
-        <h3>Dont Have an Account </h3><a href="{% url signin % }">Create One</a>
-        <br><button>Login</button><br>
+        <h3>Dont Have an Account </h3><a href="{% url signin % }"o>Create One</a>
+        <br><button onclick=signin()>Login</button><br>
 
     </div>
     
