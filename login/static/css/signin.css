@@ -24,9 +24,11 @@ div.menubar{
     }
 
     form{
-        border: 2px solid green;
-        border-radius: 10px;
-        background-color: rgb(255, 252, 255);
+        border: none;
+        border-radius: 20px;
+        background-color:transparent;
+        backdrop-filter: brightness(200%);
+        backdrop-filter: blur(300px);
         width: 300px;
         height: 300px;
         font-weight: 700;

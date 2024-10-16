@@ -1,0 +1,20 @@
+ img{
+    border-radius: 50%;
+    border: 2px solid aquamarine;
+    margin-left: 300px;
+    margin-top: 100px;
+    
+    
+}
+
+
+ img:hover{
+    border: 10px solid black;
+    transition: all .4s ease-in-out;
+    transform: rotate(360deg);
+}
+body{
+    background-image: url( "{% static 'images/bg1.jpg'% }");
+    background-position: center;
+    background-repeat: no-repeat;
+}
