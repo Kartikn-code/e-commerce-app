@@ -1,4 +1,4 @@
-[[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
+
+
+ [build] 
+ command = "python manage.py collectstatic --noinput" publish = "path/to/your/static/files"
