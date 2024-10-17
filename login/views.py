@@ -4,7 +4,7 @@ from django.contrib import auth
 
 # Create your views here.
 def login(request):
-    return render(request,"login.html",)
+    return render(request,"index.html",)
 def help(request):
     return render (request,'help.html')
 def authentication(request):
