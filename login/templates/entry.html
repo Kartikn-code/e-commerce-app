@@ -2,18 +2,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-        var loginbox= document.querySelector(".loginbox")
+   <script>
+        /* var loginbox= document.querySelector(".loginbox")
         var appear =document.querySelector(".appear")
 
 
-    appear.addEventListener("click",function(){
+    appear.addEventListener("click",() => {
     loginbox.style.display="block"
 })
 
-
+        */
     </script>
-    <!--<script type ="text/java-script" src="{% static 'java-script/script.js' %}"></script>-->
+    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href= "{% static 'css/entry.css' %}">
     <meta charset="UTF-8">
@@ -25,16 +25,18 @@
         <div class="appear">
             <img src="{% static 'images/logo.jpg' %}" width="50px" height="50px">
         </div>
-     
-    <div class="loginbox">
-        <label>Username</label><br>
-        <input type="text" name="Username" placeholder="Username"><br>
-        <label>Password</label><br>
-        <input type="password" name="password" placeholder="Pass-word" maxlength="10"><br>
-        <h3>Dont Have an Account </h3><a href="{% url signin % }">Create One</a>
-        <br><a href="{% url 'signin' %}"></a><button id="">Login</button><br>
+        <div class="loginbox">
+            <label>Username</label><br>
+            <input type="text" name="Username" placeholder="Username"><br>
+            <label>Password</label><br>
+            <input type="password" name="password" placeholder="Pass-word" maxlength="10"><br>
+            <h3>Dont Have an Account </h3><a href="{% url signin % }">Create One</a>
+            <br><a href="{% url 'signin' %}"></a><button id="">Login</button><br>
 
-    </div>
+
+        </div>
+     
+    
 </body>
 
 </html>
