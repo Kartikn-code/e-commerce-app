@@ -10,14 +10,10 @@
 <body>
     <head>
         <script>
-            function myclick(){
-                Comment("hiii")
-                
-            }
-           
+            
         </script>
     </head>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
@@ -30,13 +26,23 @@
         <ul>
            <div class="menu"><a onclick="signin()" >Help</a></div> 
             <div class="menu"><a><li>About</li></a></div>
-            <div class="menu"><a href="{% url 'signin' %}" class="menu"><li>signin</li></a></div>
+            <div class="menu"><a href="{% url 'signin' %}" class="menu1"><li>Login</li></a></div>
+            <div class="menu"><a class="menu1"><li>Login</li></a></div>
     </ul>
         </nav>
     </div>
     
     
     <body>
+        <div class="loginbox">
+            <label>Username</label><br>
+            <input type="text" name="Username" placeholder="Username"><br>
+            <label>Password</label><br>
+            <input type="password" name="password" placeholder="Pass-word" maxlength="10"><br>
+            <h3>Dont Have an Account </h3><a href="{% url signin % }">Create One</a>
+            <br><a href="{% url 'signin' %}"></a><button id="">Login</button><br>
+    
+        </div>
         
         
     </body>

@@ -1,8 +1,10 @@
-  var loginbox= document.querySelector(".loginbox")
-var appear =document.querySelector(".appear")
+  var appear=document.querySelector('.appear').addEventListener('click',()=>{
+    
+  })
+  
 
 
-appear.addEventListener("click",function(){
-    loginbox.style.display="block"
-})
+
+
+
 
